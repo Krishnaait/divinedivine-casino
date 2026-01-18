@@ -288,12 +288,12 @@ include '../includes/header.php';
             
             <div class="faq-item">
                 <h4>What are the betting limits?</h4>
-                <p>You can bet between ₹10 and ₹10,000 per game. Adjust your bet amount based on your preference and bankroll.</p>
+                <p>You can bet between ₹200 and ₹5,500 per game. Adjust your bet amount based on your preference and bankroll.</p>
             </div>
             
             <div class="faq-item">
-                <h4>How do payouts work?</h4>
-                <p>Payouts are calculated based on the game mechanics and your bet amount. Winnings are added to your balance instantly.</p>
+                <h4>How does the virtual currency work?</h4>
+                <p>Your virtual balance is used for gameplay only. It has no real-world monetary value and cannot be exchanged for real money. Balance updates are instant based on game outcomes.</p>
             </div>
             
             <div class="faq-item">

@@ -299,7 +299,6 @@ include '../includes/header.php';
                     <p><i class="fas fa-map-marker-alt"></i> <?php echo ADDRESS; ?></p>
                     <p><i class="fas fa-envelope"></i> Legal: legal@dinedivine.com</p>
                     <p><i class="fas fa-envelope"></i> Compliance: compliance@dinedivine.com</p>
-                    <p><i class="fas fa-phone"></i> Phone: +91-124-XXXXXXX</p>
                     <p><strong>CIN:</strong> <?php echo CIN; ?></p>
                     <p><strong>GST:</strong> <?php echo GST_NO; ?></p>
                     <p><strong>PAN:</strong> <?php echo PAN_NO; ?></p>

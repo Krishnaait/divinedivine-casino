@@ -150,7 +150,7 @@ include '../includes/header.php';
 <div class="games-container">
     <div class="games-header">
         <h1>Our Games</h1>
-        <p>Choose your favorite game and start winning amazing rewards. Each game offers unique challenges and exciting opportunities to test your skills and luck.</p>
+        <p>Choose your favorite game and start playing for free. Each game offers unique challenges and exciting opportunities to test your skills and have fun.</p>
     </div>
     
     <div class="games-grid">
@@ -161,13 +161,13 @@ include '../includes/header.php';
             </div>
             <div class="game-card-body">
                 <h2>Dice Game</h2>
-                <p>Roll the dice and predict the outcome! Choose between high or low, odd or even. Simple rules, thrilling gameplay, and big rewards await you.</p>
+                <p>Roll the dice and predict the outcome! Choose between high or low, odd or even. Simple rules, thrilling gameplay, and exciting fun await you.</p>
                 <div class="game-features">
                     <ul>
                         <li><i class="fas fa-check"></i> Quick rounds - 10 seconds per game</li>
-                        <li><i class="fas fa-check"></i> High win rates - Up to 95%</li>
-                        <li><i class="fas fa-check"></i> Flexible betting - ₹10 to ₹10,000</li>
-                        <li><i class="fas fa-check"></i> Instant payouts</li>
+                        <li><i class="fas fa-check"></i> Fair gameplay mechanics</li>
+                        <li><i class="fas fa-check"></i> Flexible betting - ₹200 to ₹5,500</li>
+                        <li><i class="fas fa-check"></i> Instant balance updates</li>
                     </ul>
                 </div>
                 <div class="game-card-footer">
@@ -213,8 +213,8 @@ include '../includes/header.php';
                 <div class="game-features">
                     <ul>
                         <li><i class="fas fa-check"></i> Strategic gameplay</li>
-                        <li><i class="fas fa-check"></i> Risk vs reward balance</li>
-                        <li><i class="fas fa-check"></i> Multiplying rewards</li>
+                        <li><i class="fas fa-check"></i> Risk vs strategy balance</li>
+                        <li><i class="fas fa-check"></i> Multiplying scores</li>
                         <li><i class="fas fa-check"></i> Customizable difficulty</li>
                     </ul>
                 </div>
@@ -233,7 +233,7 @@ include '../includes/header.php';
             </div>
             <div class="game-card-body">
                 <h2>Plinko Game</h2>
-                <p>Drop the ball and watch it bounce through the pegs! Land in high-value slots for massive rewards. Pure luck, pure fun!</p>
+                <p>Drop the ball and watch it bounce through the pegs! Land in high-value slots for exciting gameplay. Pure luck, pure fun!</p>
                 <div class="game-features">
                     <ul>
                         <li><i class="fas fa-check"></i> Mesmerizing physics</li>

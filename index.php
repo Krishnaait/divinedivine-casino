@@ -14,7 +14,7 @@ include 'includes/header.php';
                 <span>18+</span>
             </div>
             <h1 class="hero-title">Experience Premium Gaming</h1>
-            <p class="hero-subtitle">Join thousands of players in the most exciting casino games. Play for free, win big!</p>
+            <p class="hero-subtitle">Join thousands of players in the most exciting casino games. Play for free, have fun!</p>
             <div class="hero-buttons">
                 <a href="<?php echo SITE_URL; ?>pages/games.php" class="btn btn-hero-primary">
                     <i class="fas fa-gamepad"></i>
@@ -27,16 +27,16 @@ include 'includes/header.php';
             </div>
             <div class="hero-stats">
                 <div class="stat-item">
-                    <div class="stat-number">10K+</div>
-                    <div class="stat-label">Active Players</div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free to Play</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">₹50L+</div>
-                    <div class="stat-label">Rewards Given</div>
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Exciting Games</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Support</div>
+                    <div class="stat-number">0₹</div>
+                    <div class="stat-label">No Real Money</div>
                 </div>
             </div>
         </div>
@@ -91,8 +91,8 @@ include 'includes/header.php';
                 <div class="feature-icon">
                     <i class="fas fa-gift"></i>
                 </div>
-                <h3>Daily Rewards</h3>
-                <p>Earn bonuses, free spins, and exclusive rewards every day you play.</p>
+                <h3>Free Entertainment</h3>
+                <p>Enjoy unlimited gaming entertainment without spending any real money.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
