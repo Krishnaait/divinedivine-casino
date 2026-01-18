@@ -10,7 +10,7 @@ include '../includes/header.php';
         <div class="game-area">
             <h1 class="game-title">🎯 Plinko Game</h1>
             
-            <canvas id="gameCanvas"></canvas>
+            <canvas id="gameCanvas" width="700" height="500"></canvas>
             
             <!-- Multiplier Display at Bottom -->
             <div class="multiplier-display" id="multiplier-display"></div>
@@ -28,11 +28,11 @@ include '../includes/header.php';
                 <div class="game-stats">
                     <div class="stat-item">
                         <div class="stat-label">Last Win</div>
-                        <div class="stat-value" id="last-win">₹200</div>
+                        <div class="stat-value" id="last-win">₹0</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-label">Total Drops</div>
-                        <div class="stat-value" id="total-drops">7</div>
+                        <div class="stat-value" id="total-drops">0</div>
                     </div>
                 </div>
                 
@@ -80,7 +80,7 @@ include '../includes/header.php';
 .multiplier-display {
     display: flex;
     justify-content: space-between;
-    margin-top: -5px;
+    margin-top: 10px;
     padding: 0 20px;
     gap: 2px;
 }
@@ -133,20 +133,16 @@ include '../includes/header.php';
 .mult-badge.cyan { background: linear-gradient(135deg, #00d9ff, #00b8d4); color: white; }
 .mult-badge.purple { background: linear-gradient(135deg, #9d4edd, #c77dff); color: white; }
 .mult-badge.green { background: linear-gradient(135deg, #28a745, #20c997); color: white; }
+
+#gameCanvas {
+    max-width: 100%;
+    height: auto;
+}
 </style>
 
 <script>
     const canvas = document.getElementById('gameCanvas');
     const ctx = canvas.getContext('2d');
-    
-    function resizeCanvas() {
-        const rect = canvas.getBoundingClientRect();
-        canvas.width = rect.width;
-        canvas.height = rect.height;
-        initializeGame();
-    }
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
     
     // Game Configuration
     const PEGS_ROWS = 8;
@@ -160,8 +156,8 @@ include '../includes/header.php';
     let balls = [];
     let slots = [];
     let gameStats = {
-        totalDrops: 7,
-        lastWin: 200,
+        totalDrops: 0,
+        lastWin: 0,
         bestMultiplier: 0
     };
     
