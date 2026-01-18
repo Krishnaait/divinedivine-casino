@@ -1185,3 +1185,104 @@ p {
         gap: 10px;
     }
 }
+
+
+/* ============================================
+   ALL IN Button & Bet Controls
+   ============================================ */
+
+.bet-input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.bet-input-group input[type="number"] {
+    flex: 1;
+}
+
+.all-in-btn {
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    color: #0a0e27;
+    border: none;
+    padding: 12px 20px;
+    border-radius: var(--radius-lg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.all-in-btn:hover {
+    background: linear-gradient(135deg, #ffed4e, #ffd700);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+}
+
+.all-in-btn:active {
+    transform: translateY(0);
+}
+
+.bet-limits {
+    font-size: 0.85rem;
+    color: var(--gray-text);
+    margin-top: 8px;
+    text-align: center;
+}
+
+
+/* ============================================
+   Footer Legal Disclaimer & Age Restriction
+   ============================================ */
+
+.age-restriction-footer {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #ff6b35, #d94d1f);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% { 
+        box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        transform: scale(1);
+    }
+    50% { 
+        box-shadow: 0 6px 25px rgba(255, 107, 53, 0.6);
+        transform: scale(1.05);
+    }
+}
+
+.age-restriction-footer i {
+    font-size: 1.2rem;
+}
+
+.legal-disclaimer {
+    max-width: 900px;
+    margin: 20px auto 0;
+    padding: 20px;
+    background: rgba(255, 107, 53, 0.1);
+    border: 2px solid rgba(255, 107, 53, 0.3);
+    border-radius: 12px;
+}
+
+.legal-disclaimer p {
+    color: #d0d0d0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.legal-disclaimer strong {
+    color: #ff6b35;
+}

@@ -32,9 +32,9 @@ define('SITE_URL', $protocol . '://' . $host . $base_path . '/');
 define('SITE_NAME', 'DineDivine Ventures');
 
 // Game Configuration
-define('INITIAL_BALANCE', 1000);
-define('MIN_BET', 10);
-define('MAX_BET', 10000);
+define('INITIAL_BALANCE', 10000);
+define('MIN_BET', 200);
+define('MAX_BET', 5500);
 
 // Database Configuration (if needed in future)
 define('DB_HOST', 'localhost');

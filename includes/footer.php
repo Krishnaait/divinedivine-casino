@@ -30,6 +30,9 @@
                     <li><a href="<?php echo SITE_URL; ?>pages/privacy.php">Privacy Policy</a></li>
                     <li><a href="<?php echo SITE_URL; ?>pages/terms.php">Terms & Conditions</a></li>
                     <li><a href="<?php echo SITE_URL; ?>pages/disclaimer.php">Disclaimer</a></li>
+                    <li><a href="<?php echo SITE_URL; ?>pages/fair-play.php">Fair Play Policy</a></li>
+                    <li><a href="<?php echo SITE_URL; ?>pages/responsible-gaming.php">Responsible Gaming</a></li>
+                    <li><a href="<?php echo SITE_URL; ?>pages/legal-info.php">Legal Information</a></li>
                 </ul>
             </div>
             
@@ -44,13 +47,22 @@
         </div>
         
         <div class="footer-bottom">
+            <div class="age-restriction-footer">
+                <i class="fas fa-exclamation-circle"></i>
+                <span>18+ ONLY</span>
+            </div>
             <p>&copy; <?php echo date('Y'); ?> <?php echo COMPANY_FULL_NAME; ?>. All rights reserved.</p>
             <p><?php echo ADDRESS; ?></p>
+            <div class="legal-disclaimer">
+                <p><strong>Legal Disclaimer:</strong> This is a free-to-play gaming platform for entertainment purposes only. No real money gambling or wagering is involved. All virtual currency has no real-world monetary value and cannot be exchanged for real money. Users must be 18 years or older. Play responsibly.</p>
+            </div>
         </div>
     </footer>
     
     <!-- Global Scripts -->
+    <script>window.SITE_URL = '<?php echo SITE_URL; ?>';</script>
     <script src="<?php echo SITE_URL; ?>assets/js/main.js"></script>
+    <script src="<?php echo SITE_URL; ?>assets/js/check-balance.js"></script>
     
 </body>
 </html>

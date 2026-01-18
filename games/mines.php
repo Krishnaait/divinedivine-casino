@@ -15,7 +15,7 @@ include '../includes/header.php';
             <div class="game-controls">
                 <div class="control-group">
                     <label for="bet-amount">Bet Amount (₹)</label>
-                    <input type="number" id="bet-amount" min="10" max="10000" value="100" step="10">
+                    <input type="number" id="bet-amount" min="200" max="5500" value="200" step="10">
                 </div>
                 
                 <div class="control-group">

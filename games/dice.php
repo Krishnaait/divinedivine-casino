@@ -18,7 +18,11 @@ include '../includes/header.php';
             <div class="game-controls">
                 <div class="control-group">
                     <label for="bet-amount">Bet Amount (₹)</label>
-                    <input type="number" id="bet-amount" min="10" max="10000" value="100" step="10">
+                    <div class="bet-input-group">
+                        <input type="number" id="bet-amount" min="200" max="5500" value="200" step="100">
+                        <button class="all-in-btn" id="all-in-btn" title="Bet all your balance">ALL IN</button>
+                    </div>
+                    <div class="bet-limits">Min: ₹200 | Max: ₹5,500</div>
                 </div>
                 
                 <div class="control-group">
@@ -93,8 +97,8 @@ include '../includes/header.php';
             return;
         }
         
-        if (betAmount < 10 || betAmount > 10000) {
-            showNotification('Bet must be between ₹10 and ₹10,000', 'warning');
+        if (betAmount < 200 || betAmount > 5500) {
+            showNotification('Bet must be between ₹200 and ₹5,500', 'warning');
             return;
         }
         
@@ -210,6 +214,14 @@ include '../includes/header.php';
         })
         .catch(error => console.error('Error:', error));
     }
+    
+    // ALL IN button handler
+    document.getElementById('all-in-btn').addEventListener('click', function() {
+        const currentBalance = parseInt(document.getElementById('balance-display').textContent.replace(/[₹,]/g, ''));
+        const maxBet = Math.min(currentBalance, 5500);
+        document.getElementById('bet-amount').value = maxBet;
+        showNotification(`Bet set to ₹${maxBet.toLocaleString('en-IN')}`, 'info');
+    });
 </script>
 
 <?php include '../includes/footer.php'; ?>
