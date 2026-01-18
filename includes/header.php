@@ -24,7 +24,7 @@
         <div class="navbar-container">
             <div class="navbar-brand">
                 <a href="<?php echo SITE_URL; ?>index.php" class="logo">
-                    <i class="fas fa-gamepad"></i>
+                    <img src="<?php echo SITE_URL; ?>assets/images/logo.png" alt="<?php echo COMPANY_NAME; ?>" class="logo-img">
                     <span><?php echo COMPANY_NAME; ?></span>
                 </a>
             </div>

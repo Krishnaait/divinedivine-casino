@@ -4,7 +4,10 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
-                <h3><?php echo COMPANY_NAME; ?></h3>
+                <div class="footer-logo">
+                    <img src="<?php echo SITE_URL; ?>assets/images/logo.png" alt="<?php echo COMPANY_NAME; ?>" class="footer-logo-img">
+                </div>
+                <h3><?php echo COMPANY_FULL_NAME; ?></h3>
                 <p>Experience the thrill of premium gaming with DineDivine Ventures.</p>
                 <div class="social-links">
                     <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>

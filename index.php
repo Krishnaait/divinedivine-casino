@@ -141,6 +141,46 @@ include 'includes/header.php';
     </div>
 </section>
 
+<!-- Premium Gaming Experience Section -->
+<section class="gaming-experience-section section" style="background: rgba(255, 255, 255, 0.02);">
+    <div class="container">
+        <h2 class="section-title text-center">Premium Gaming Experience</h2>
+        <p class="text-center" style="color: var(--gray-text); max-width: 700px; margin: 0 auto 50px;">Immerse yourself in the world of high-quality entertainment with stunning visuals and engaging gameplay.</p>
+        
+        <div class="experience-grid">
+            <div class="experience-card">
+                <div class="experience-image">
+                    <img src="<?php echo SITE_URL; ?>assets/images/modern_casino_interior.jpg" alt="Modern Casino Experience">
+                    <div class="experience-overlay">
+                        <h3>Luxurious Ambiance</h3>
+                        <p>Experience the thrill of a premium casino environment from the comfort of your home.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experience-card">
+                <div class="experience-image">
+                    <img src="<?php echo SITE_URL; ?>assets/images/realistic_casino_floor.png" alt="Casino Floor">
+                    <div class="experience-overlay">
+                        <h3>Authentic Gaming</h3>
+                        <p>Enjoy realistic game mechanics and stunning graphics that bring the casino to life.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experience-card">
+                <div class="experience-image">
+                    <img src="<?php echo SITE_URL; ?>assets/images/realistic_blackjack.png" alt="Table Games">
+                    <div class="experience-overlay">
+                        <h3>Skill & Strategy</h3>
+                        <p>Test your skills with games that combine luck and strategy for maximum entertainment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- Transparency Section -->
     <section class="transparency-section section" style="background: rgba(255, 255, 255, 0.02); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
         <div class="container">
