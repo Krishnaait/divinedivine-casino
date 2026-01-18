@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /includes/
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+Sitemap: https://divinedivine-casino-production.up.railway.app/sitemap.xml

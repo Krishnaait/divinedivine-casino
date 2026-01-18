@@ -210,6 +210,61 @@ include '../includes/header.php';
         </div>
     </div>
     
+    <!-- Transparency & Disclosure Section -->
+    <div class="transparency-section" style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(157, 78, 221, 0.1)); border: 2px solid var(--border-color); border-radius: 20px; padding: 50px; margin: 80px 0;">
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.2rem;">🔍 100% Transparency & Disclosure</h2>
+        
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div style="background: rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 15px; margin-bottom: 30px;">
+                <h3 style="color: var(--gold-color); margin-bottom: 15px;">✅ Free-to-Play Entertainment Platform</h3>
+                <p style="line-height: 1.8; margin-bottom: 10px;">DineDivine Ventures operates as a <strong>100% free-to-play entertainment platform</strong>. We want to be absolutely clear about our business model:</p>
+                <ul style="list-style: none; padding-left: 0; margin-top: 15px;">
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">💰 <strong>No Real Money Gambling:</strong> We do not accept, process, or facilitate any real money transactions for gaming purposes.</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">🎮 <strong>Virtual Currency Only:</strong> All gameplay uses virtual currency (₹) that has absolutely no real-world monetary value.</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">🚫 <strong>Cannot Be Exchanged:</strong> Virtual currency cannot be withdrawn, cashed out, or exchanged for real money, goods, or services.</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">🎯 <strong>Entertainment Purpose:</strong> Our games are designed purely for entertainment and recreational purposes.</li>
+                    <li style="padding: 8px 0;">🔒 <strong>No Deposits or Withdrawals:</strong> We do not offer any deposit or withdrawal mechanisms for real money.</li>
+                </ul>
+            </div>
+            
+            <div style="background: rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 15px; margin-bottom: 30px;">
+                <h3 style="color: var(--gold-color); margin-bottom: 15px;">🎁 What You Get (For Free)</h3>
+                <p style="line-height: 1.8; margin-bottom: 10px;">When you play on our platform, here's exactly what you receive:</p>
+                <ul style="list-style: none; padding-left: 0; margin-top: 15px;">
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✨ <strong>Initial Virtual Balance:</strong> ₹10,000 in virtual currency to start playing immediately.</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">🎲 <strong>Unlimited Gameplay:</strong> Play as many games as you want without any cost.</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">🔄 <strong>Reset Anytime:</strong> If your balance reaches zero, you can reset it back to ₹10,000 instantly.</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">🏆 <strong>Fun & Entertainment:</strong> Enjoy exciting gameplay mechanics and game experiences.</li>
+                    <li style="padding: 8px 0;">📊 <strong>Personal Statistics:</strong> Track your gameplay history and performance.</li>
+                </ul>
+            </div>
+            
+            <div style="background: rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 15px; margin-bottom: 30px;">
+                <h3 style="color: var(--gold-color); margin-bottom: 15px;">❌ What We Do NOT Offer</h3>
+                <p style="line-height: 1.8; margin-bottom: 10px;">To maintain complete transparency, here's what we explicitly do NOT provide:</p>
+                <ul style="list-style: none; padding-left: 0; margin-top: 15px;">
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">🚫 <strong>No Real Money Prizes:</strong> We do not award cash prizes, monetary rewards, or any form of real money.</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">🚫 <strong>No Physical Prizes:</strong> We do not provide physical goods, gift cards, or tangible rewards.</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">🚫 <strong>No Payment Processing:</strong> We do not accept credit cards, debit cards, UPI, or any payment methods.</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">🚫 <strong>No Withdrawals:</strong> There is no mechanism to withdraw or cash out virtual currency.</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">🚫 <strong>No Gambling Services:</strong> We are not a gambling platform and do not offer gambling services.</li>
+                    <li style="padding: 8px 0;">🚫 <strong>No Phone Support:</strong> We do not provide phone-based customer support (email only).</li>
+                </ul>
+            </div>
+            
+            <div style="background: rgba(255, 107, 53, 0.1); padding: 30px; border-radius: 15px; border: 2px solid var(--primary-color);">
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">⚠️ Important Legal Disclaimer</h3>
+                <p style="line-height: 1.8; font-size: 0.95rem;">
+                    <strong>Age Restriction:</strong> You must be 18 years or older to use this platform.<br><br>
+                    <strong>No Gambling:</strong> This is not a gambling website. No real money is involved in any capacity.<br><br>
+                    <strong>Entertainment Only:</strong> All games are provided for entertainment purposes only.<br><br>
+                    <strong>Virtual Currency:</strong> All currency displayed is virtual and has zero real-world value.<br><br>
+                    <strong>Responsible Gaming:</strong> While no real money is involved, we encourage responsible gaming habits. If you feel you're spending too much time gaming, please take a break.
+                </p>
+            </div>
+        </div>
+    </div>
+    
     <!-- Company Information -->
     <div class="company-info">
         <h2>Company Information</h2>

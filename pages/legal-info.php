@@ -50,15 +50,16 @@ include '../includes/header.php';
             </div>
 
             <div class="legal-section">
-                <h2>2. Business Classification</h2>
-                <p>DineDivine Ventures Private Limited is classified as a <strong>Private Limited Company</strong> registered under the Companies Act, 2013 in India.</p>
+                <h2>2. Business Classification & 100% Transparency</h2>
+                <p>DineDivine Ventures Private Limited is classified as a <strong>Private Limited Company</strong> registered under the Companies Act, 2013 in India. We are committed to 100% transparency in our business operations.</p>
                 
-                <h3>2.1 Business Activities</h3>
+                <h3>2.1 Business Activities & Model</h3>
                 <ul>
-                    <li><strong>Primary Activity:</strong> Operation of online gaming and entertainment platform</li>
-                    <li><strong>Business Model:</strong> Free-to-play gaming services</li>
-                    <li><strong>Service Type:</strong> Digital entertainment and skill-based games</li>
-                    <li><strong>Target Market:</strong> Adults aged 18 and above in India</li>
+                    <li><strong>Primary Activity:</strong> Operation of online gaming and entertainment platform.</li>
+                    <li><strong>Business Model:</strong> 100% Free-to-play gaming services. No real money transactions.</li>
+                    <li><strong>Service Type:</strong> Digital entertainment and skill-based games for recreational purposes.</li>
+                    <li><strong>Target Market:</strong> Adults aged 18 and above in India.</li>
+                    <li><strong>Transparency Commitment:</strong> We do not offer gambling, real money prizes, or cash withdrawals.</li>
                 </ul>
 
                 <h3>2.2 Industry Classification</h3>

@@ -273,17 +273,17 @@ include '../includes/header.php';
         <div class="faq-grid">
             <div class="faq-item">
                 <h4>How do I start playing?</h4>
-                <p>Simply visit our Games page, choose your favorite game, set your bet amount, and start playing! You'll receive an initial balance of ₹1000 to get started.</p>
+                <p>Simply visit our Games page, choose your favorite game, set your bet amount, and start playing! You'll receive an initial balance of ₹10,000 in virtual currency (not real money) to get started.</p>
             </div>
             
             <div class="faq-item">
-                <h4>Is my money safe?</h4>
-                <p>Yes! We use industry-leading encryption and security measures to protect your data and transactions. All games use fair algorithms.</p>
+                <h4>Is this real money gambling?</h4>
+                <p><strong>No!</strong> This is a 100% free-to-play entertainment platform. We do not accept, process, or involve any real money. All currency is virtual and has zero real-world value. You cannot deposit or withdraw real money.</p>
             </div>
             
             <div class="faq-item">
                 <h4>Can I reset my balance?</h4>
-                <p>Yes! You can reset your balance anytime using the reset button in the navigation bar. Your balance will be reset to ₹1000.</p>
+                <p>Yes! You can reset your virtual balance anytime using the reset button in the navigation bar. Your balance will be reset to ₹10,000 in virtual currency (not real money).</p>
             </div>
             
             <div class="faq-item">
@@ -299,6 +299,31 @@ include '../includes/header.php';
             <div class="faq-item">
                 <h4>Is responsible gaming supported?</h4>
                 <p>Absolutely! We encourage responsible gaming. You can reset your balance anytime and set your own betting limits.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Can I win real money or prizes?</h4>
+                <p><strong>No.</strong> We do not offer real money prizes, cash rewards, physical goods, or gift cards. This is purely an entertainment platform with virtual currency only.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Do you accept payments or deposits?</h4>
+                <p><strong>No.</strong> We do not accept any form of payment including credit/debit cards, UPI, net banking, or any other payment method. Everything is completely free.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Can I withdraw or cash out my balance?</h4>
+                <p><strong>No.</strong> Virtual currency cannot be withdrawn, cashed out, or converted to real money. It exists only for gameplay entertainment on our platform.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Why do you require 18+ age?</h4>
+                <p>Even though no real money is involved, we require users to be 18+ to comply with gaming regulations and promote responsible gaming habits.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>How do you make money if it's free?</h4>
+                <p>We are a new entertainment platform. Currently, we do not charge users or accept payments. Our focus is on providing free entertainment experiences.</p>
             </div>
         </div>
     </div>

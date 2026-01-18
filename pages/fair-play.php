@@ -15,9 +15,9 @@ include '../includes/header.php';
     <div class="legal-content">
         <div class="container">
             <div class="legal-section">
-                <h2>1. Our Commitment to Fair Play</h2>
-                <p>At DineDivine Ventures Private Limited, we are committed to providing a fair, transparent, and trustworthy gaming environment for all our users. Fair play is the foundation of our platform, and we implement rigorous measures to ensure that every game is conducted with integrity and transparency.</p>
-                <p>This Fair Play Policy outlines our commitment to fairness, the technologies we use, and the standards we uphold to maintain a level playing field for all players.</p>
+                <h2>1. Our Commitment to 100% Transparency & Fair Play</h2>
+                <p>At DineDivine Ventures Private Limited, we are committed to providing a <strong>100% fair, transparent, and trustworthy</strong> gaming environment. Since we operate on a free-to-play model with no real money involved, our primary goal is to provide honest entertainment. Fair play is the foundation of our platform, and we implement rigorous measures to ensure that every game is conducted with integrity and transparency.</p>
+                <p>This Fair Play Policy outlines our commitment to fairness, the technologies we use, and the standards we uphold to maintain a level playing field for all players. We want you to know exactly how our games work and why you can trust the outcomes.</p>
             </div>
 
             <div class="legal-section">
@@ -54,13 +54,14 @@ include '../includes/header.php';
 
             <div class="legal-section">
                 <h2>3. Game Integrity</h2>
-                <h3>3.1 Transparent Game Mechanics</h3>
-                <p>We believe in complete transparency regarding how our games work:</p>
+                <h3>3.1 100% Transparent Game Mechanics</h3>
+                <p>We believe in complete transparency regarding how our games work. We want our players to understand the mechanics behind every game:</p>
                 <ul>
-                    <li>All game rules are clearly displayed before gameplay</li>
-                    <li>Payout rates and multipliers are clearly stated</li>
-                    <li>Game mechanics are explained in easy-to-understand language</li>
-                    <li>No hidden rules or conditions affect game outcomes</li>
+                    <li><strong>Clear Rules:</strong> All game rules are clearly displayed before gameplay.</li>
+                    <li><strong>Visible Multipliers:</strong> Virtual payout rates and multipliers are clearly stated.</li>
+                    <li><strong>Simple Language:</strong> Game mechanics are explained in easy-to-understand language.</li>
+                    <li><strong>No Hidden Conditions:</strong> No hidden rules or conditions affect game outcomes.</li>
+                    <li><strong>Virtual Only:</strong> All outcomes result in virtual currency updates only.</li>
                 </ul>
 
                 <h3>3.2 No Manipulation</h3>

@@ -141,7 +141,43 @@ include 'includes/header.php';
     </div>
 </section>
 
-<!-- CTA Section -->
+    <!-- Transparency Section -->
+    <section class="transparency-section section" style="background: rgba(255, 255, 255, 0.02); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 class="section-title">100% Transparent & Free-to-Play</h2>
+                <p style="color: var(--gray-text); max-width: 700px; margin: 0 auto;">We believe in complete honesty with our players. Here is exactly how DineDivine Ventures operates.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color);">
+                    <div style="font-size: 2rem; margin-bottom: 15px;">💰</div>
+                    <h3 style="margin-bottom: 10px; color: var(--gold-color);">No Real Money</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6;">This is a social gaming platform. We do not accept real money deposits, and we do not offer real money withdrawals. All gameplay is 100% free.</p>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color);">
+                    <div style="font-size: 2rem; margin-bottom: 15px;">🎮</div>
+                    <h3 style="margin-bottom: 10px; color: var(--gold-color);">Virtual Currency</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6;">All currency used on this site is virtual (₹) and has no real-world value. It cannot be exchanged for cash, prizes, or any other value outside the site.</p>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 16px; border: 1px solid var(--border-color);">
+                    <div style="font-size: 2rem; margin-bottom: 15px;">🚫</div>
+                    <h3 style="margin-bottom: 10px; color: var(--gold-color);">No Prizes or Rewards</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.6;">We do not offer any real-world prizes, rewards, gift cards, or monetary incentives. Our platform is strictly for entertainment and fun.</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 50px; padding: 30px; background: rgba(255, 107, 53, 0.05); border-radius: 16px; border: 1px dashed var(--primary-color); text-align: center;">
+                <p style="font-size: 0.9rem; color: var(--gray-text);">
+                    <strong>Legal Disclosure:</strong> DineDivine Ventures Private Limited is a registered entity (CIN: U56102HR2024PTC123713). We operate in full compliance with Indian laws governing social gaming and entertainment platforms. This website does not facilitate gambling.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
 <section class="cta-section section">
     <div class="container">
         <div class="cta-content">

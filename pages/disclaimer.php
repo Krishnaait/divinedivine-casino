@@ -21,16 +21,17 @@ include '../includes/header.php';
             </div>
 
             <div class="legal-section">
-                <h2>2. Entertainment Purpose Only</h2>
-                <p>DineDivine Ventures operates a <strong>free-to-play gaming platform</strong> designed solely for entertainment purposes. Our platform:</p>
+                <h2>2. 100% Transparency: Entertainment Purpose Only</h2>
+                <p>DineDivine Ventures operates a <strong>100% free-to-play entertainment platform</strong> designed solely for recreational purposes. To ensure complete transparency, we explicitly state that our platform:</p>
                 <ul>
-                    <li>Does NOT involve real money gambling or wagering</li>
-                    <li>Does NOT offer real money prizes or rewards</li>
-                    <li>Does NOT constitute a gambling service under Indian law</li>
-                    <li>Uses only virtual currency with no real-world monetary value</li>
-                    <li>Is intended for recreational gaming and skill development only</li>
+                    <li><strong>NO REAL MONEY:</strong> Does NOT involve real money gambling, wagering, or betting in any form.</li>
+                    <li><strong>NO PRIZES:</strong> Does NOT offer real money prizes, cash rewards, physical goods, or gift cards.</li>
+                    <li><strong>NO GAMBLING:</strong> Does NOT constitute a gambling service, betting house, or casino under Indian law.</li>
+                    <li><strong>VIRTUAL ONLY:</strong> Uses only virtual currency (₹) with absolutely no real-world monetary value.</li>
+                    <li><strong>NO PAYMENTS:</strong> Does NOT accept any form of payment, deposit, or financial transaction from users.</li>
+                    <li><strong>RECREATIONAL:</strong> Is intended strictly for recreational gaming, fun, and skill development.</li>
                 </ul>
-                <p>All games, outcomes, and virtual currency balances are for entertainment purposes only and have no real-world value.</p>
+                <p>All games, outcomes, and virtual currency balances are for entertainment purposes only. Any "winnings" or "losses" are purely virtual and have no impact on your real-world financial status.</p>
             </div>
 
             <div class="legal-section">
@@ -45,8 +46,8 @@ include '../includes/header.php';
                     <li>May be adjusted, modified, or reset at our sole discretion</li>
                 </ul>
 
-                <h3>3.2 No Purchase Required</h3>
-                <p>Our platform operates on a completely free-to-play model. No purchase is necessary to access or play any games. We do not accept real money deposits or payments for gameplay.</p>
+                <h3>3.2 No Purchase Required & No Payments Accepted</h3>
+                <p>Our platform operates on a completely free-to-play model. No purchase is necessary to access or play any games. We do not accept real money deposits, payments, or any form of financial contribution for gameplay. We do not have any payment gateway integrated into our platform.</p>
             </div>
 
             <div class="legal-section">
