@@ -14,7 +14,16 @@ define('PHONE', '+91-XXXXXXXXXX');
 
 // Website Configuration
 // Auto-detect site URL for any deployment environment
-$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+// Check for HTTPS including reverse proxy headers (Railway, Heroku, etc.)
+$protocol = 'http';
+if (
+    (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ||
+    (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') ||
+    (isset($_SERVER['HTTP_X_FORWARDED_SSL']) && $_SERVER['HTTP_X_FORWARDED_SSL'] === 'on') ||
+    (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443)
+) {
+    $protocol = 'https';
+}
 $host = $_SERVER['HTTP_HOST'];
 $base_path = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
 $base_path = str_replace('\\', '/', $base_path); // Fix Windows paths
