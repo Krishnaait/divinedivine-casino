@@ -419,8 +419,22 @@ include '../includes/header.php';
     });
     
     // Initialize and start game loop
-    initializeGame();
-    gameLoop();
+    console.log('Plinko game script loaded');
+    console.log('Canvas element:', canvas);
+    console.log('Canvas dimensions:', canvas.width, 'x', canvas.height);
+    
+    // Wait for DOM to be fully loaded
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, initializing game');
+            initializeGame();
+            gameLoop();
+        });
+    } else {
+        console.log('DOM already loaded, initializing game immediately');
+        initializeGame();
+        gameLoop();
+    }
 </script>
 
 <?php include '../includes/footer.php'; ?>
