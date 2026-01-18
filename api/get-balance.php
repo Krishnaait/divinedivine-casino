@@ -8,6 +8,6 @@ $balance = getUserBalance();
 sendJSON([
     'success' => true,
     'balance' => formatCurrency($balance),
-    'amount' => $balance
+    'raw_balance' => $balance
 ]);
 ?>

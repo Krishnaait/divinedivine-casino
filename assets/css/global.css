@@ -1407,3 +1407,38 @@ p {
         background: linear-gradient(to top, rgba(10, 14, 39, 0.9), rgba(10, 14, 39, 0.7));
     }
 }
+
+/* Cashout Button Styles */
+.cashout-btn {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.cashout-btn:hover {
+    background: linear-gradient(135deg, #20c997, #28a745);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+}
+
+.cashout-btn:active {
+    transform: translateY(0);
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}

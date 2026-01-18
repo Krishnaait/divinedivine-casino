@@ -31,6 +31,7 @@ include '../includes/header.php';
                 
                 <div class="button-group">
                     <button class="start-btn" id="start-btn">START GAME</button>
+                    <button class="cashout-btn" id="cashout-btn" style="display: none;">CASH OUT</button>
                 </div>
             </div>
         </div>
@@ -140,7 +141,8 @@ include '../includes/header.php';
         coins = [];
         gameDistance = 0;
         
-        document.getElementById('start-btn').disabled = true;
+        document.getElementById('start-btn').style.display = 'none';
+        document.getElementById('cashout-btn').style.display = 'block';
         
         gameLoop();
     }
@@ -151,7 +153,8 @@ include '../includes/header.php';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         
         if (!gameState.isRunning) {
-            document.getElementById('start-btn').disabled = false;
+            document.getElementById('start-btn').style.display = 'block';
+            document.getElementById('cashout-btn').style.display = 'none';
             return;
         }
         
@@ -332,6 +335,15 @@ include '../includes/header.php';
         })
         .catch(error => console.error('Error:', error));
     }
+    
+    // Cashout button handler
+    document.getElementById('cashout-btn').addEventListener('click', function() {
+        if (!gameState.isRunning) return;
+        
+        // End game with current score as winnings
+        endGame(true);
+        showNotification(`Cashed out! You won ₹${gameState.score}`, 'success');
+    });
 </script>
 
 <?php include '../includes/footer.php'; ?>

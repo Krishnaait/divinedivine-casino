@@ -15,6 +15,7 @@ $_SESSION['games_played'] = 0;
 sendJSON([
     'success' => true,
     'balance' => formatCurrency(INITIAL_BALANCE),
+    'raw_balance' => INITIAL_BALANCE,
     'message' => 'Balance reset successfully'
 ]);
 ?>
