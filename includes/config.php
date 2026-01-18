@@ -13,7 +13,13 @@ define('EMAIL', 'contact@dinedivine.com');
 define('PHONE', '+91-XXXXXXXXXX');
 
 // Website Configuration
-define('SITE_URL', 'http://localhost/dinedivine-ventures/');
+// Auto-detect site URL for any deployment environment
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+$host = $_SERVER['HTTP_HOST'];
+$base_path = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
+$base_path = str_replace('\\', '/', $base_path); // Fix Windows paths
+$base_path = preg_replace('#/(includes|pages|games|api)$#', '', $base_path); // Remove subdirectories
+define('SITE_URL', $protocol . '://' . $host . $base_path . '/');
 define('SITE_NAME', 'DineDivine Ventures');
 
 // Game Configuration

@@ -4,241 +4,8 @@ $page_title = "Chicken Game";
 include '../includes/header.php';
 ?>
 
-<style>
-    .game-container {
-        min-height: calc(100vh - 80px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 40px 20px;
-        background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(157, 78, 221, 0.1));
-    }
-    
-    .chicken-wrapper {
-        max-width: 1200px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 350px;
-        gap: 30px;
-        align-items: start;
-    }
-    
-    .game-area {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        border: 2px solid var(--border-color);
-        border-radius: 20px;
-        padding: 30px;
-        box-shadow: var(--shadow-lg);
-    }
-    
-    .game-title {
-        font-size: 2rem;
-        color: var(--accent-gold);
-        text-align: center;
-        margin-bottom: 20px;
-        font-weight: bold;
-        text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
-    }
-    
-    #gameCanvas {
-        width: 100%;
-        height: 400px;
-        background: linear-gradient(180deg, rgba(0, 217, 255, 0.1), rgba(255, 107, 53, 0.1));
-        border: 2px solid var(--border-color);
-        border-radius: 15px;
-        display: block;
-        margin: 20px 0;
-    }
-    
-    .game-controls {
-        background: rgba(255, 215, 0, 0.05);
-        border: 1px solid rgba(255, 215, 0, 0.2);
-        border-radius: 15px;
-        padding: 20px;
-        margin: 20px 0;
-    }
-    
-    .control-group {
-        margin-bottom: 15px;
-    }
-    
-    .control-group label {
-        display: block;
-        color: var(--accent-gold);
-        font-weight: 600;
-        margin-bottom: 8px;
-    }
-    
-    .control-group input {
-        width: 100%;
-        padding: 10px;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        color: var(--light-text);
-    }
-    
-    .game-stats {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-        margin: 15px 0;
-        font-size: 0.9rem;
-    }
-    
-    .stat-item {
-        background: rgba(255, 255, 255, 0.05);
-        padding: 12px;
-        border-radius: 8px;
-        text-align: center;
-    }
-    
-    .stat-label {
-        color: var(--gray-text);
-        margin-bottom: 5px;
-        font-size: 0.85rem;
-    }
-    
-    .stat-value {
-        color: var(--accent-gold);
-        font-weight: 700;
-        font-size: 1.1rem;
-    }
-    
-    .button-group {
-        display: flex;
-        gap: 10px;
-        margin-top: 15px;
-    }
-    
-    .button-group button {
-        flex: 1;
-        padding: 12px;
-        border: none;
-        border-radius: 8px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    
-    .start-btn {
-        background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-        color: white;
-    }
-    
-    .start-btn:hover:not(:disabled) {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(255, 107, 53, 0.4);
-    }
-    
-    .start-btn:disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-    }
-    
-    .sidebar {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        border: 2px solid var(--border-color);
-        border-radius: 20px;
-        padding: 25px;
-        box-shadow: var(--shadow-lg);
-        position: sticky;
-        top: 100px;
-    }
-    
-    .sidebar h3 {
-        color: var(--accent-gold);
-        margin-bottom: 15px;
-        text-align: center;
-        font-size: 1.1rem;
-    }
-    
-    .info-box {
-        background: rgba(255, 215, 0, 0.1);
-        border: 2px solid rgba(255, 215, 0, 0.3);
-        border-radius: 12px;
-        padding: 15px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .info-label {
-        color: var(--gray-text);
-        font-size: 0.85rem;
-        margin-bottom: 5px;
-    }
-    
-    .info-value {
-        color: var(--accent-gold);
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
-    
-    .instructions {
-        background: rgba(0, 217, 255, 0.1);
-        border: 1px solid rgba(0, 217, 255, 0.3);
-        border-radius: 10px;
-        padding: 15px;
-        font-size: 0.85rem;
-        color: var(--gray-text);
-    }
-    
-    .instructions h4 {
-        color: var(--accent-gold);
-        margin-bottom: 10px;
-    }
-    
-    .instructions ul {
-        list-style: none;
-        padding: 0;
-    }
-    
-    .instructions li {
-        margin-bottom: 8px;
-        padding-left: 20px;
-        position: relative;
-    }
-    
-    .instructions li::before {
-        content: '▸';
-        position: absolute;
-        left: 0;
-        color: var(--primary-color);
-    }
-    
-    @media (max-width: 1024px) {
-        .chicken-wrapper {
-            grid-template-columns: 1fr;
-        }
-        
-        .sidebar {
-            position: static;
-        }
-    }
-    
-    @media (max-width: 768px) {
-        .game-container {
-            padding: 20px;
-        }
-        
-        .game-area {
-            padding: 20px;
-        }
-        
-        .game-title {
-            font-size: 1.5rem;
-        }
-        
-        #gameCanvas {
-            height: 300px;
-        }
-    }
-</style>
-
-<div class="game-container">
-    <div class="chicken-wrapper">
+<div class="game-container chicken-bg">
+    <div class="game-wrapper">
         <!-- Main Game Area -->
         <div class="game-area">
             <h1 class="game-title">🐔 Chicken Adventure</h1>
@@ -321,8 +88,8 @@ include '../includes/header.php';
     
     // Chicken object
     const chicken = {
-        x: canvas.width / 2,
-        y: canvas.height - 60,
+        x: 50,
+        y: 0,
         width: 30,
         height: 30,
         speed: 5,
@@ -364,7 +131,7 @@ include '../includes/header.php';
         gameState.coins = 0;
         gameState.betAmount = betAmount;
         
-        chicken.x = canvas.width / 2;
+        chicken.x = 50;
         chicken.y = canvas.height - 60;
         chicken.velocityX = 0;
         chicken.velocityY = 0;
@@ -437,7 +204,7 @@ include '../includes/header.php';
             coin.x -= coin.speed;
             
             // Draw coin
-            ctx.fillStyle = var(--accent-gold);
+            ctx.fillStyle = '#ffd700';
             ctx.beginPath();
             ctx.arc(coin.x, coin.y, coin.radius, 0, Math.PI * 2);
             ctx.fill();
