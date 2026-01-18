@@ -1,0 +1,61 @@
+<?php
+// DineDivine Ventures - Configuration File
+session_start();
+
+// Company Information
+define('COMPANY_NAME', 'DineDivine Ventures');
+define('COMPANY_FULL_NAME', 'DineDivine Ventures Private Limited');
+define('CIN', 'U56102HR2024PTC123713');
+define('GST_NO', '06AALCD0239Q1ZA');
+define('PAN_NO', 'AALCD0239Q');
+define('ADDRESS', 'C/O Pardeep Saggar, 20-P DSC, Sec-23A, Shivaji Nagar, Gurgaon - 122001, Haryana');
+define('EMAIL', 'contact@dinedivine.com');
+define('PHONE', '+91-XXXXXXXXXX');
+
+// Website Configuration
+define('SITE_URL', 'http://localhost/dinedivine-ventures/');
+define('SITE_NAME', 'DineDivine Ventures');
+
+// Game Configuration
+define('INITIAL_BALANCE', 1000);
+define('MIN_BET', 10);
+define('MAX_BET', 10000);
+
+// Database Configuration (if needed in future)
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'dinedivine');
+
+// Initialize user session
+if (!isset($_SESSION['user_id'])) {
+    $_SESSION['user_id'] = 'user_' . uniqid();
+    $_SESSION['balance'] = INITIAL_BALANCE;
+    $_SESSION['total_wins'] = 0;
+    $_SESSION['total_losses'] = 0;
+    $_SESSION['games_played'] = 0;
+}
+
+// Helper function to format currency
+function formatCurrency($amount) {
+    return '₹' . number_format($amount, 2);
+}
+
+// Helper function to get user balance
+function getUserBalance() {
+    return isset($_SESSION['balance']) ? $_SESSION['balance'] : INITIAL_BALANCE;
+}
+
+// Helper function to update balance
+function updateBalance($amount) {
+    $_SESSION['balance'] = max(0, $_SESSION['balance'] + $amount);
+    return $_SESSION['balance'];
+}
+
+// Helper function for AJAX responses
+function sendJSON($data) {
+    header('Content-Type: application/json');
+    echo json_encode($data);
+    exit;
+}
+?>

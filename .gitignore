@@ -1,0 +1,43 @@
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
+# PHP files
+*.log
+.env
+.env.local
+
+# Composer
+vendor/
+composer.lock
+
+# Node modules (if used)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Cache
+.cache/
+*.cache
+
+# Build files
+dist/
+build/
+
+# Session files
+sessions/
+*.session
