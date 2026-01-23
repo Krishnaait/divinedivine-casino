@@ -1442,3 +1442,24 @@ p {
     gap: 10px;
     width: 100%;
 }
+
+/* Brand Disclaimer Styling */
+.brand-disclaimer {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 107, 53, 0.1);
+    border: 1px solid rgba(255, 107, 53, 0.3);
+    border-radius: 8px;
+}
+
+.brand-disclaimer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ffd700;
+    margin: 0;
+}
+
+.brand-disclaimer strong {
+    color: #ff6b35;
+    font-weight: 600;
+}

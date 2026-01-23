@@ -59,6 +59,9 @@
             <div class="legal-disclaimer">
                 <p><strong>Legal Disclaimer:</strong> This is a free-to-play gaming platform for entertainment purposes only. No real money gambling or wagering is involved. All virtual currency has no real-world monetary value and cannot be exchanged for real money. Users must be 18 years or older. Play responsibly.</p>
             </div>
+            <div class="brand-disclaimer">
+                <p><strong>Brand Independence:</strong> This business is not affiliated with any other brand, company, or organization. This platform is completely and independently operated by <?php echo COMPANY_FULL_NAME; ?>. All trademarks, logos, and brand names are the property of their respective owners and are used for identification purposes only.</p>
+            </div>
         </div>
     </footer>
     
